@@ -1,5 +1,20 @@
 .items {
   margin-top: 2rem;
   display: grid;
-  row-gap: 1rem;
+  row-gap: 0.8rem;
+}
+
+.items .single-item {
+  animation: slideIn 0.3s ease forwards;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
